@@ -16,14 +16,14 @@ namespace MlodelQuestionWFCon
             {
                 Salary salary = new BasicSalary(employe.Basic);
 
-                salary = new Allowance(salary, employe.Rate);
+                salary = new EPF(salary,employe.Position);
+
+                salary = new Allowance(salary, employe.Rate, employe.Basic);
 
                 if (employe.transportState == false)
                 {
                     salary = new TransPortAllowance(salary);
                 }
-
-                salary = new EPF(salary);
 
                 if (salary.salaryCalculator() > 100000)
                 {

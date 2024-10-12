@@ -27,6 +27,11 @@ namespace ModelQuestion
             this.NetSalary = salary;
         }
 
+        public Employee(double salary)
+        {
+            this.NetSalary = salary;
+        }
+
         public String Name { get; set; }
         public String Position { get; set; }
         public double Basic { get; set; }

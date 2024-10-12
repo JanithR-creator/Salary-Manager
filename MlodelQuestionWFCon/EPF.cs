@@ -8,11 +8,23 @@ namespace ModelQuestion
 {
     internal class EPF : SalaryDecorator
     {
-        public EPF(Salary salary) : base(salary) { }
+        private String position;
+        public EPF(Salary salary, String position) : base(salary)
+        {
+            this.position = position;
+        }
 
         public override double salaryCalculator()
         {
-            return salary.salaryCalculator() - salary.salaryCalculator() * 0.05;
+            if (position.ToLower() != "intern")
+            {
+                return salary.salaryCalculator() - salary.salaryCalculator() * 0.05;
+            }
+            else
+            {
+                return salary.salaryCalculator();
+            }
+            
         }
     }
 }

@@ -9,15 +9,17 @@ namespace ModelQuestion
     internal class Allowance : SalaryDecorator
     {
         private double rate;
+        private double basic;
 
-        public Allowance(Salary salary, double rate) : base(salary)
+        public Allowance(Salary salary, double rate, double basic) : base(salary)
         {
             this.rate = rate;
+            this.basic=basic;
         }
 
         public override double salaryCalculator()
         {
-            return salary.salaryCalculator() * rate + salary.salaryCalculator();
+            return new BasicSalary(basic).salaryCalculator() * rate + salary.salaryCalculator();
         }
     }
 }

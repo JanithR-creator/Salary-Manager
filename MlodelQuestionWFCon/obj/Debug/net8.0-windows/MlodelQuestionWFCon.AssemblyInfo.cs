@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MlodelQuestionWFCon")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+978927477cdbbf6a3191fe8742d785d5392e5719")]
 [assembly: System.Reflection.AssemblyProductAttribute("MlodelQuestionWFCon")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MlodelQuestionWFCon")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
